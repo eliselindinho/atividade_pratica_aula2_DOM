@@ -24,12 +24,14 @@
   <body>
     <div class="container">
       <header>
-        <h1 id="titulo">Aula de JS - Compreendendo melhor o DOM</h1>
+        <h1 id="titulo" style="color: green">
+          Aula de JS - Compreendendo melhor o DOM
+        </h1>
       </header>
       <section>
         <div>
-          <h2 id="subtitulo">O que é JavaScript?</h2>
-          <p class ="texto">
+          <h2 id="subtitulo" style="color: red">O que é JavaScript?</h2>
+          <p class="texto" style="color: blue">
             <b>JavaScript</b> é uma linguagem de programação que permite a você
             implementar itens complexos em páginas web — toda vez que uma página
             da web faz mais do que simplesmente mostrar a você informação
@@ -43,7 +45,7 @@
         </div>
 
         <div>
-          <ul>
+          <ul style="color: brown">
             <li>
               HTML é a linguagem de marcação que nós usamos para estruturar e
               dar significado para o nosso conteúdo web. Por exemplo, definindo
@@ -68,9 +70,9 @@
       </section>
     </div>
     <div>
-      <h3>O objeto HTML DOM NodeList</h3>
-      <p>
-        Um NodeListobjeto é uma lista (coleção) de nós extraídos de um
+      <h3 style="color: purple">O objeto HTML DOM NodeList</h3>
+      <p class="texto" style="color: blue">
+        Um NodeList objeto é uma lista (coleção) de nós extraídos de um
         documento. Um NodeListobjeto é quase o mesmo que um
         HTMLCollectionobjeto. Alguns navegadores (mais antigos) retornam um
         objeto NodeList em vez de um HTMLCollection para métodos como
@@ -80,8 +82,10 @@
       </p>
     </div>
     <div>
-      <h3>A diferença entre um HTMLCollection e um NodeList</h3>
-      <p>
+      <h3 style="color: purple">
+        A diferença entre um HTMLCollection e um NodeList
+      </h3>
+      <p class="texto" style="color: blue">
         Uma NodeList e uma coleção HTML são praticamente a mesma coisa. Ambos
         são coleções semelhantes a arrays (listas) de nós (elementos) extraídos
         de um documento. Os nós podem ser acessados ​​por números de índice. O
@@ -95,20 +99,20 @@
         adicionar um elemento a uma lista no DOM, a lista no HTMLCollection
         também será alterada.
       </p>
-      <p>
+      <p class="texto" style="color: blue">
         Um NodeList geralmente é uma coleção estática . Exemplo: Se você
         adicionar um elemento a uma lista no DOM, a lista em NodeList não será
         alterada.
       </p>
-      <p>
+      <p class="texto" style="color: blue">
         Os métodos getElementsByClassName()e getElementsByTagName() retornam um
         HTMLCollection ativo. O querySelectorAll()método retorna um NodeList
         estático. A childNodespropriedade retorna uma NodeList ativa.
       </p>
     </div>
     <div>
-      <h3>Reagindo a eventos</h3>
-      <p>
+      <h3 style="color: purple">Reagindo a eventos</h3>
+      <p class="texto" style="color: blue">
         Um JavaScript pode ser executado quando ocorre um evento, como quando um
         usuário clica em um elemento HTML. Para executar o código quando um
         usuário clica em um elemento, adicione o código JavaScript a um atributo
@@ -120,28 +124,38 @@
       </p>
     </div>
     <div>
-      <h3>JavaScript HTML DOM - Alterando CSS
-      </h3>
-      <p>
-        <h2>O HTML DOM permite que o JavaScript altere o estilo dos elementos HTML.</h2>
-       <h4>Mudando o estilo HTML</h4> 
+      <h3 style="color: purple">JavaScript HTML DOM - Alterando CSS</h3>
+
+      <h2 style="color: red">
+        O HTML DOM permite que o JavaScript altere o estilo dos elementos HTML.
+      </h2>
+      <h4 style="color: rgb(255, 192, 245)">Mudando o estilo HTML</h4>
+      <p class="texto" style="color: blue">
         Para alterar o estilo de um elemento HTML, use esta sintaxe:
-        
-        document.getElementById(id).style.property = new style</p>
-        <p>
-          <h3>Usando eventos</h3>
-          O HTML DOM permite executar código quando ocorre um evento.
-          Os eventos são gerados pelo navegador quando "coisas acontecem" com elementos HTML:</p>
-          <ul>
-            <li>Um elemento é clicado</li>
-            <li> A página foi carregada</li>
-            <li> Os campos de entrada são alterados</li>
-            <li>Você aprenderá mais sobre eventos no próximo capítulo deste tutorial.</li>
-          </ul>
+        document.getElementById(id).style.property = new style
+      </p>
+      <h3 style="color: purple">Usando eventos</h3>
+      <p class="texto" style="color: blue">
+        O HTML DOM permite executar código quando ocorre um evento. Os eventos
+        são gerados pelo navegador quando "coisas acontecem" com elementos HTML:
+      </p>
+      <ul style="color: brown">
+        <li>Um elemento é clicado</li>
+        <li>A página foi carregada</li>
+        <li>Os campos de entrada são alterados</li>
+        <li>
+          Você aprenderá mais sobre eventos no próximo capítulo deste tutorial.
+        </li>
+      </ul>
     </div>
     <div>
-      <h4>Element</h4>
-      <p>Element é a classe base mais geral da qual todos os objetos elemento (isto é, objetos que representam elementos) em um Documentherdam. Possui apenas métodos e propriedades comuns a todos os tipos de elementos. Classes mais específicas herdam de Element.</p>
+      <h4 style="color: rgb(255, 192, 245)">Element</h4>
+      <p class="texto" style="color: blue">
+        Element é a classe base mais geral da qual todos os objetos elemento
+        (isto é, objetos que representam elementos) em um Documentherdam. Possui
+        apenas métodos e propriedades comuns a todos os tipos de elementos.
+        Classes mais específicas herdam de Element.
+      </p>
     </div>
   </body>
   <script src="js/aula2.js"></script>

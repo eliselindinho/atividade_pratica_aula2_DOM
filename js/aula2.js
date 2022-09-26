@@ -1,5 +1,3 @@
-let titulo = (document.querySelector("#titulo").style.color = blue);
-
 console.log(document.body.childElementCount - 1);
 
 function paragrafo() {
