@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade Prática - Aula 2 de DOM</title>
+    <!-- Include Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="titulo">Aula de JS - Compreendendo melhor o DOM</h1>
+      </header>
+      <section>
+        <div>
+          <h2 id="subtitulo">O que é JavaScript?</h2>
+          <p class ="texto">
+            <b>JavaScript</b> é uma linguagem de programação que permite a você
+            implementar itens complexos em páginas web — toda vez que uma página
+            da web faz mais do que simplesmente mostrar a você informação
+            estática — mostrando conteúdo que se atualiza em um intervalo de
+            tempo, mapas interativos ou gráficos 2D/3D animados, etc. — você
+            pode apostar que o JavaScript provavelmente está envolvido. É a
+            terceira camada do bolo das tecnologias padrões da web, duas das
+            quais (HTML e CSS) nós falamos com muito mais detalhes em outras
+            partes da Área de Aprendizado.
+          </p>
+        </div>
+
+        <div>
+          <ul>
+            <li>
+              HTML é a linguagem de marcação que nós usamos para estruturar e
+              dar significado para o nosso conteúdo web. Por exemplo, definindo
+              parágrafos, cabeçalhos, tabelas de conteúdo, ou inserindo imagens
+              e vídeos na página.
+            </li>
+            <li>
+              CSS é uma linguagem de regras de estilo que nós usamos para
+              aplicar estilo ao nosso conteúdo HTML. Por exemplo, definindo
+              cores de fundo e fontes, e posicionando nosso conteúdo em
+              múltiplas colunas.
+            </li>
+            <li>
+              JavaScript é uma linguagem de programação que permite a você criar
+              conteúdo que se atualiza dinamicamente, controlar múltimídias,
+              imagens animadas, e tudo o mais que há de intessante. Ok, não
+              tudo, mas é maravilhoso o que você pode efetuar com algumas linhas
+              de código JavaScript.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div>
+      <h3>O objeto HTML DOM NodeList</h3>
+      <p>
+        Um NodeListobjeto é uma lista (coleção) de nós extraídos de um
+        documento. Um NodeListobjeto é quase o mesmo que um
+        HTMLCollectionobjeto. Alguns navegadores (mais antigos) retornam um
+        objeto NodeList em vez de um HTMLCollection para métodos como
+        getElementsByClassName(). Todos os navegadores retornam um objeto
+        NodeList para a propriedade childNodes. A maioria dos navegadores
+        retorna um objeto NodeList para o método querySelectorAll().
+      </p>
+    </div>
+    <div>
+      <h3>A diferença entre um HTMLCollection e um NodeList</h3>
+      <p>
+        Uma NodeList e uma coleção HTML são praticamente a mesma coisa. Ambos
+        são coleções semelhantes a arrays (listas) de nós (elementos) extraídos
+        de um documento. Os nós podem ser acessados ​​por números de índice. O
+        índice começa em 0. Ambos possuem uma propriedade length que retorna o
+        número de elementos da lista (coleção). Um HTMLCollection é uma coleção
+        de elementos de documento . Uma NodeList é uma coleção de nós de
+        documento (nós de elemento, nós de atributo e nós de texto). Itens
+        HTMLCollection podem ser acessados ​​por seu nome, id ou número de
+        índice. Os itens NodeList só podem ser acessados ​​por seu número de
+        índice. Uma HTMLCollection é sempre uma coleção ativa . Exemplo: Se você
+        adicionar um elemento a uma lista no DOM, a lista no HTMLCollection
+        também será alterada.
+      </p>
+      <p>
+        Um NodeList geralmente é uma coleção estática . Exemplo: Se você
+        adicionar um elemento a uma lista no DOM, a lista em NodeList não será
+        alterada.
+      </p>
+      <p>
+        Os métodos getElementsByClassName()e getElementsByTagName() retornam um
+        HTMLCollection ativo. O querySelectorAll()método retorna um NodeList
+        estático. A childNodespropriedade retorna uma NodeList ativa.
+      </p>
+    </div>
+    <div>
+      <h3>Reagindo a eventos</h3>
+      <p>
+        Um JavaScript pode ser executado quando ocorre um evento, como quando um
+        usuário clica em um elemento HTML. Para executar o código quando um
+        usuário clica em um elemento, adicione o código JavaScript a um atributo
+        de evento HTML: onclick=JavaScript Exemplos de eventos HTML: Quando um
+        usuário clica no mouse Quando uma página da web é carregada Quando uma
+        imagem foi carregada Quando o mouse se move sobre um elemento Quando um
+        campo de entrada é alterado Quando um formulário HTML é enviado Quando
+        um usuário pressiona uma tecla.
+      </p>
+    </div>
+    <div>
+      <h3>JavaScript HTML DOM - Alterando CSS
+      </h3>
+      <p>
+        <h2>O HTML DOM permite que o JavaScript altere o estilo dos elementos HTML.</h2>
+       <h4>Mudando o estilo HTML</h4> 
+        Para alterar o estilo de um elemento HTML, use esta sintaxe:
+        
+        document.getElementById(id).style.property = new style</p>
+        <p>
+          <h3>Usando eventos</h3>
+          O HTML DOM permite executar código quando ocorre um evento.
+          Os eventos são gerados pelo navegador quando "coisas acontecem" com elementos HTML:</p>
+          <ul>
+            <li>Um elemento é clicado</li>
+            <li> A página foi carregada</li>
+            <li> Os campos de entrada são alterados</li>
+            <li>Você aprenderá mais sobre eventos no próximo capítulo deste tutorial.</li>
+          </ul>
+    </div>
+    <div>
+      <h4>Element</h4>
+      <p>Element é a classe base mais geral da qual todos os objetos elemento (isto é, objetos que representam elementos) em um Documentherdam. Possui apenas métodos e propriedades comuns a todos os tipos de elementos. Classes mais específicas herdam de Element.</p>
+    </div>
+  </body>
+  <script src="js/aula2.js"></script>
+</html>
